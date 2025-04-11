@@ -1,0 +1,125 @@
+/* General Page Style */
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Weather Card */
+  #outer-box {
+    background: linear-gradient(to bottom right, #3fc5ff, #6345f5);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    width: 400px;   /* increased width */
+    height: 400px;  /* increased height */
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+  
+  /* Search bar */
+  #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  #city-input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  #search-btn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #search-btn i {
+    color: black;
+  }
+  
+  /* Temperature */
+  #temperature h1 {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  
+  /* City name */
+  #city-name h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Humidity and Speed */
+  #humidity-speed {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  
+  #humidity,
+  #speed {
+    font-size: 10px;
+    width: 50%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  #picture img {
+    width: 170px; /* You can increase this */
+    height: 170px;
+    margin-top: 100 px;
+  
+  }
+  
+  /* Adjust spacing if things feel cramped */
+  #temperature h1 {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  
+  #city-name h3 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  #humidity-speed h3 {
+    font-size: 18px;
+    margin: 10px 20px;
+    display: inline-block;
+  }
+  .data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .data:hover {
+    box-shadow: 0 0 15px #ffffff88;
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
